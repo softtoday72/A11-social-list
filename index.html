@@ -1,0 +1,101 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/b0d4065fb7.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- nav bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Member</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href=".\index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href=".\favorite.html">Favorite</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search-input">
+        <button class="btn btn-outline-success" type="submit" id="search-form">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- data panel -->
+<div class="container mt-5 d-flex flex-wrap" id="data-Panel">
+  <div class="row col-sm-3 m-1">
+    <div class="card">
+      <img src="https://randomuser.me/api/portraits/men/88.jpg" class="card-img-top rounded-circle pt-2" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Guillaume Vincent</h5>
+      <div class="icon d-flex justify-content-between align-items-center">
+        <a href="#" class="btn btn-primary">More</a>
+        <i class="fas fa-user-plus" id="add-to-favorite" data-id="601"></i>
+      </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- pagination -->
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center" id="paginator">
+    
+    <li class="page-item"><a class="page-link" href="#" data-page="1">1</a></li>
+    <li class="page-item"><a class="page-link" href="#" data-page="2">2</a></li>
+    <li class="page-item"><a class="page-link" href="#" data-page="3">3</a></li>
+    
+  </ul>
+</nav>
+    
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Name</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="" class="card-img-top pt-2 modalAvatar" alt="OOPs!">
+        <ul>
+          <li class="modalEmail">Email : email</li>
+          <li class="modalBirthday">Birthday : modalbirthday</li>
+          <li class="modalGender">Gender : gender</li>
+          <li class="modalRegion">Region : region</li>
+          <li class="modalAge">Age : age</li>
+          <li class="modalUpdate">Profile update: ...</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Add to friend</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+    <!-- Ajax, Js, CDN  -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
